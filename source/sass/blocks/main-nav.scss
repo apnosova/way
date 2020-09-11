@@ -1,0 +1,29 @@
+.main-nav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 190px;
+
+  list-style: none;
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+.main-nav__item {
+  @include font-medium;
+  @include text-size(14px, 17px);
+}
+
+.main-nav__link {
+
+  color: $font-dark;
+  text-align: center;
+}
+
+@media (max-width: $tablet-width) {
+  .main-nav__toggle {
+    display: block;
+    background-color: grey;
+  }
+}
