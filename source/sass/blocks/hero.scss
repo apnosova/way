@@ -1,10 +1,116 @@
 .hero {
   min-height: 860px;
-  background-color: lightblue;
+  background-color: #5a80a7;
   background-image: url("../img/hero-bg-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero__inner {
-  width: 412px;
-  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 1024px;
+  min-height: 745px;
+
+  color: $white;
+}
+
+.hero__title {
+  width: 390px;
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: $semi-bold;
+
+  @include text-size(55px, 1.45);
+  letter-spacing: -1.10667px;
+}
+
+.hero__text {
+  width: 390px;
+  margin: 0;
+  margin-bottom: 35px;
+  line-height: 1.7;
+  letter-spacing: -0.466667px;
+}
+
+.hero__button {
+  margin-right: 50px;
+}
+
+@media (max-width: $tablet-width) {
+  .hero {
+    min-height: 344px;
+  }
+
+  .hero__inner {
+    align-items: center;
+    width: auto;
+    min-height: 325px;
+  }
+
+  .hero__title {
+    width: auto;
+    max-width: 398px;
+    margin-bottom: 15px;
+
+    @include text-size(30px, 1.5);
+    text-align: center;
+    letter-spacing: normal;
+  }
+
+  .hero__text {
+    width: auto;
+    max-width: 398px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .hero__button {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .hero {
+    background-color: $white;
+    background-image: none;
+  }
+
+  .hero__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    min-height: 235px;
+    width: 100%;
+    background-color: #5a80a7;
+    background-image: url("../img/hero-bg-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero__title {
+    display: flex;
+    max-width: 294px;
+    padding-left: 8px;
+    padding-top: 18px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .hero__text {
+    margin-bottom: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 100%;
+    color: $dark;
+  }
+
+  .hero__button {
+    margin-bottom: 16px;
+  }
 }

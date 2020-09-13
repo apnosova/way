@@ -3,6 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
+  <!--
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  -->
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Путешествие по Европе</title>
@@ -10,31 +14,82 @@
 
 <body>
   <header class="page-header">
-    <img class="page-header__logo" src="img/logo.svg" alt="Логотип" width="57" height="22">
-    <nav class="page-header__nav main-nav">
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">О путешествии</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Цены</a>
-        </li>
-      </ul>
-    </nav>
-    <a class="page-header__phone-number phone-number" href="tel:+749978468446">+7 (499) -784-684-46</a>
+    <div class="page-header__inner container">
+      <!---Убрать!!!-->
+      <img class="page-header__logo" src="img/logo.svg" alt="Логотип" width="57" height="22">
+      <nav class="main-nav page-header__nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">О путешествии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Цены</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="phone-link page-header__phone-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
+    </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Туры в Европу</h1>
     <section class="hero">
       <div class="hero__inner container">
-        <h2 class="hero__title">Путешествие по Европе</h2>
+        <div class="hero__wrapper">
+          <h2 class="hero__title">Путешествие по Европе</h2>
+        </div>
         <p class="hero__text">
           В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота
           природы.
         </p>
         <a class="button hero__button" href="#">Смотреть тур</a>
       </div>
+    </section>
+    <section class="places-to-visit">
+      <h2 class="places-to-visit__title">Места посещения</h2>
+      <p class="places-to-visit__text">
+        Вы можете выбрать полный тур или частичный, с посещением первых 3 мест
+      </p>
+
+      <ul class="places-to-visit_list">
+        <li class="places-to-visit__item">
+          <!--  Обернуть!!!
+            <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/chicken-big-mobile@1x.webp 1x, img/chicken-big-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+              <img class="catalog__image catalog__image--big" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Кэт энерджи Про курица 1000 грамм">
+              </picture>
+          -->
+          <img class="places-to-visit__image" src="img/greece-mobile.1x.jpg" width="288" height="425" alt="Греция">
+          <a class="places-to-visit__link" href="#">Смотреть подробнее</a>
+          <span class="places-to-visit__country">Греция</span>
+        </li>
+        <li class="places-to-visit__item">
+          <img class="places-to-visit__image" src="img/albania-mobile.1x.jpg" width="288" height="425" alt="Албания">
+          <a class="places-to-visit__link" href="#">Смотреть подробнее</a>
+          <span class="places-to-visit__country">Албания</span>
+        </li>
+        <li class="places-to-visit__item">
+          <img class="places-to-visit__image" src="img/macedonia-mobile.1x.jpg" width="288" height="425"
+            alt="Македония">
+          <a class="places-to-visit__link" href="#">Смотреть подробнее</a>
+          <span class="places-to-visit__country">Македония</span>
+        </li>
+        <li class="places-to-visit__item">
+          <img class="places-to-visit__image" src="img/montenegro-mobile.1x.jpg" width="288" height="425"
+            alt="Черногория" ">
+          <a class=" places-to-visit__link" href="#">Смотреть подробнее</a>
+          <span class="places-to-visit__country">Черногория</span>
+        </li>
+        <li class="places-to-visit__item">
+          <img class="places-to-visit__image" src="img/croatia-mobile.1x.jpg" width="288" height="425" alt="Хорватия">
+          <a class="places-to-visit__link" href="#">Смотреть подробнее</a>
+          <span class="places-to-visit__country">Хорватия</span>
+        </li>
+      </ul>
     </section>
   </main>
 </body>

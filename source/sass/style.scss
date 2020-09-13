@@ -1,8 +1,11 @@
 @import "../sass/fonts.scss";
-@import "../sass/global.scss";
 @import "../sass/variables.scss";
 @import "../sass/mixins.scss";
+@import "../sass/global.scss";
+@import "../sass/blocks/container";
 @import "../sass/blocks/page-header.scss";
 @import "../sass/blocks/main-nav.scss";
+@import "../sass/blocks/button.scss";
 @import "../sass/blocks/hero.scss";
-@import "../sass/blocks/container";
+@import "../sass/blocks/phone-link.scss";
+@import "../sass/blocks/places-to-visit.scss";

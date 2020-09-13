@@ -12,9 +12,10 @@ body {
   min-width: 320px;
   margin: 0;
 
-  font-family: "Montserrat", "Tahoma", sans-serif;
-  font-size: 14px;
-  line-height: 1.29;
+  @include font-regular;
+  @include text-size(16px, 1.75);
+  color: $very-dark;
+  background: $bg-white;
 }
 
 a {

@@ -1,0 +1,22 @@
+.phone-link {
+  @include text-size(18px, 1.78);
+  color: $color-main;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+.phone-link [href] {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/phone.svg");
+  }
+}

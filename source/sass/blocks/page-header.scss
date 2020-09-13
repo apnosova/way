@@ -1,10 +1,27 @@
-.page-header {
+.page-header__inner {
   display: flex;
   justify-content: space-between;
-  max-width: 1024px;
-  margin: 0 auto;
+  align-items: center;
+  max-width: 1158px;
+  min-height: 99px;
 }
 
-.page-header__phone-number {
-  display: block;
+.page-header-logo {
+  width: 57px;
+  height: 22px;
+}
+
+.page-header__phone-link {
+  margin-right: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .page-header__inner {
+    display: block;
+    max-width: auto;
+  }
+
+  .page-header__phone-link {
+    display: none;
+  }
 }
